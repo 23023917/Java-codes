@@ -9,7 +9,7 @@ Scanner sc = new Scanner(System.in);
 
      //sum of array
 
-  /*   int array[] = {1,2,3,4,5};
+     int array[] = {1,2,3,4,5};
      
      int sum =0;
      for(int i=0; i<array.length; i++) {
@@ -57,7 +57,7 @@ Scanner sc = new Scanner(System.in);
     	System.out.println(highest);
     	System.out.println(smallest);
     	
-     }*/
+     }
      
      //multiplication table using 2d array
      
@@ -65,7 +65,7 @@ Scanner sc = new Scanner(System.in);
      
      for(int i=0; i< table.length; i++) {
     	
-    	 for(int j=0; j<table.length; j++) {
+    	 for(int j=0; j<table[i].length; j++) {
     		 
     		 int result = table[i][j];
     		 
