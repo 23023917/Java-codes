@@ -1,50 +1,22 @@
 
-public class Car {
+public class Car extends Vehicle{
 	
-	String model;
-	String brand;
-	int year;
- private static int carCount = 0;
-
 	Car() {
-		System.out.println("This is the last year car brand");
+		
+		this.name = "Audi";
 		this.model = "SUV";
-		this.brand = "Ranger";
 		this.year = 2023;
-		carCount++;
+		
+		System.out.println("The details of the car is: " + this.name +  this.model  + this.year );
 	}
 	
-	Car(String model,String brand, int year) {
-		System.out.println("This is the car brand");
-		this.model = model;
-		this.brand = brand;
-		this.year = year;
-		carCount++;
+	
+public  void carRent(int date) {
 		
-	}
-	
-	public static int Count() {
-		
-		return carCount;
-		
-	}
-	
-	public  String Return() {
-		
-		return "Model" + model + " year" + year + " Brand" + brand;
-	}
-	
-	public static void main(String[] args) {
-		
-	
-	Car car1 = new Car("hgh", "hahhs",2024);
-	Car car2 = new Car();
-	car1.Return();
-	
-	System.out.println(Car.Count());
-	System.out.println(car1.Return());
-	System.out.println(car2.Return());
-	
+		int  vehicleAmount = 20;
+		double vat = date*(vehicleAmount+0.10);
+	     System.out.println("The total amount is: " + vat);
+	     
 	}
 
 }
